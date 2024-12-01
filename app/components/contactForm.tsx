@@ -6,8 +6,8 @@ function ContactForm() {
   if (state.succeeded) {
     return (
       <p>
-        Thanks for reaching out! We're excited to connect with you and will
-        respond as soon as possible!
+        Thanks for reaching out! We&rsquo;re excited to connect with you and
+        will respond as soon as possible!
       </p>
     );
   }

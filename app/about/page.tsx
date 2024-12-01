@@ -27,7 +27,7 @@ const About = () => {
                     VirtuDigiTech connects local and international clients with
                     expert web development and virtual assistant services. From
                     IT support and email management to building impactful online
-                    presences, we&apos;re here to empower businesses of all
+                    presences, we&rsquo;re here to empower businesses of all
                     sizes.
                   </p>
                 </div>
@@ -56,7 +56,7 @@ const About = () => {
                 </p>
                 <br></br>
                 <p className="text-gray-700 leading-8 text-center">
-                  Lester's background as a call center agent and virtual
+                  Lester&rsquo;s background as a call center agent and virtual
                   assistant has equipped him with a deep understanding of client
                   needs and the ability to deliver exceptional customer service.
                   This, combined with his technical expertise, has allowed

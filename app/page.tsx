@@ -5,7 +5,6 @@ import Title from "./components/title";
 import SectionTitle from "./components/sectionTitle";
 import List from "./components/list";
 import Web from "@/public/Images/Web.jpg";
-import VirtualAssistant from "@/public/Images/VirtualAssistant.jpg";
 import EmailMarketing from "@/public/Images/Expertise/EmailManagement.jpg";
 import ITSupport from "@/public/Images/Expertise/ITSupport.jpg";
 import Planning from "@/public/Images/Expertise/Planning.jpg";
@@ -400,8 +399,8 @@ export default function Home() {
                 <p className="text-center lg:w-[70%] md:w-[80%] sm:w-[100%] w-[100%]">
                   We provide comprehensive digital solutions to help businesses
                   thrive. From crafting stunning websites to providing reliable
-                  virtual assistance, we're dedicated to helping you achieve
-                  your goals.
+                  virtual assistance, we&rsquo;re dedicated to helping you
+                  achieve your goals.
                 </p>
               </div>
             </div>

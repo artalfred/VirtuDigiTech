@@ -10,9 +10,7 @@ const Slider = () => {
       className="relative w-full"
       data-carousel="slide"
     >
-      {/* <!-- Carousel wrapper --> */}
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {/* <!-- Item 1 --> */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <Image
             src={sample}
@@ -20,7 +18,6 @@ const Slider = () => {
             alt="..."
           />
         </div>
-        {/* <!-- Item 2 --> */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <Image
             src={sample}
@@ -28,7 +25,6 @@ const Slider = () => {
             alt="..."
           />
         </div>
-        {/* <!-- Item 3 --> */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <Image
             src={sample}
@@ -36,7 +32,6 @@ const Slider = () => {
             alt="..."
           />
         </div>
-        {/* <!-- Item 4 --> */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <Image
             src={sample}
@@ -44,7 +39,6 @@ const Slider = () => {
             alt="..."
           />
         </div>
-        {/* <!-- Item 5 --> */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <Image
             src={sample}
@@ -53,7 +47,6 @@ const Slider = () => {
           />
         </div>
       </div>
-      {/* <!-- Slider indicators --> */}
       <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
         <button
           type="button"
@@ -91,7 +84,6 @@ const Slider = () => {
           data-carousel-slide-to="4"
         ></button>
       </div>
-      {/* <!-- Slider controls --> */}
       <button
         type="button"
         className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
