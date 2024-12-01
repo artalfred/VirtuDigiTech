@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "./nav";
 import { Footer } from "./footer";
-import icons from "../app/favicon.ico";
 
 const DMsans = localFont({
   src: "./fonts/DMSans.ttf",

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, MenuItems, MenuItem } from "@headlessui/react";
+import { Menu, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 

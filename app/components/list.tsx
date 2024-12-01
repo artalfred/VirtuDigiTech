@@ -1,11 +1,11 @@
 import React from "react";
 
-interface Listprops {
+interface ListProps {
   name: string;
   description: string;
 }
 
-const List = ({ name, description }: Listprops) => {
+const List = ({ name, description }: ListProps) => {
   return (
     <li className="flex gap-2">
       <span>

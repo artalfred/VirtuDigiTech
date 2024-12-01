@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface CardProps {
   title: string;
   description: string;
   buttonName: string;
-  image: object;
+  image: string | StaticImport;
 }
 
 export const Card = ({ title, description, buttonName, image }: CardProps) => {
