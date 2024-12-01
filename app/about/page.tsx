@@ -48,9 +48,9 @@ const About = () => {
                 <p className="text-center text-gray-700  leading-8">
                   <span className="green leading-8 text-center font-bold">
                     Lester,
-                  </span>{" "}
+                  </span>
                   an IT professional with several years in the field, has been
-                  the founder of Virtudigitech since 2022. Now Virtudigitech is
+                  the founder of VirtuDigiTech since 2022. Now VirtuDigiTech is
                   a growing company that guarantees quality in web development
                   and virtual assistant services.
                 </p>
@@ -60,16 +60,16 @@ const About = () => {
                   assistant has equipped him with a deep understanding of client
                   needs and the ability to deliver exceptional customer service.
                   This, combined with his technical expertise, has allowed
-                  Virtudigitech to grow into a trusted partner for businesses of
+                  VirtuDigiTech to grow into a trusted partner for businesses of
                   all sizes.
                 </p>
                 <br></br>
                 <p className="text-gray-700 leading-8 text-center">
-                  Based in the Philippines, Virtudigitech leverages the
-                  country's skilled workforce to offer remote web development
-                  and virtual assistant services. By working remotely, we are
-                  able to provide flexible and cost-effective solutions without
-                  compromising on quality.
+                  Based in the Philippines, VirtuDigiTech leverages the
+                  country&rsquo;s skilled workforce to offer remote web
+                  development and virtual assistant services. By working
+                  remotely, we are able to provide flexible and cost-effective
+                  solutions without compromising on quality.
                 </p>
               </div>
             </div>
@@ -81,8 +81,8 @@ const About = () => {
         </MainContainer>
       </section>
       <BottomAds
-        title="Stay Connected: Let’s Start the Conversation"
-        description="We’re here to listen, assist, and collaborate. Reach out to us today and let’s create something extraordinary together!"
+        title="Stay Connected: Let&rsquo;s Start the Conversation"
+        description="We&rsquo;re here to listen, assist, and collaborate. Reach out to us today and let&rsquo;s create something extraordinary together!"
       />
     </div>
   );

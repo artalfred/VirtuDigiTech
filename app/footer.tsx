@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[2rem]">
           <div>
             <div className="flex shrink-0 items-center">
-              <Image src={Logo} alt="VirtuDigitaltech" height={80} />
+              <Image src={Logo} alt="VirtuDigiTech" height={80} />
             </div>
 
             <div className="mt-4">
@@ -28,17 +28,15 @@ export const Footer = () => {
               <li className="text-[16px] font-medium">
                 <Link href="/">Home</Link>
               </li>
+
               <li className="text-[16px] font-medium">
-                <Link href="/">About Us</Link>
+                <Link href="/WhyVirtuDigiTech">Why VirtuDigiTech</Link>
               </li>
               <li className="text-[16px] font-medium">
-                <Link href="/">Services</Link>
+                <Link href="/articles">Blog Articles</Link>
               </li>
               <li className="text-[16px] font-medium">
-                <Link href="/">Pricing</Link>
-              </li>
-              <li className="text-[16px] font-medium">
-                <Link href="/">Support</Link>
+                <Link href="/about">About Us</Link>
               </li>
             </ul>
           </div>
@@ -51,9 +49,6 @@ export const Footer = () => {
               </li>
               <li className="text-[16px] font-medium">
                 <Link href="/">support@virtudigitech.com</Link>
-              </li>
-              <li className="text-[16px] font-medium">
-                <Link href="/">contact@virtudigitech.com</Link>
               </li>
               <li className="text-[16px] font-medium">
                 <Link href="/">+63 956 7612 014</Link>
