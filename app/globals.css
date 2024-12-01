@@ -111,28 +111,28 @@ body {
 
 /* SECTION 2 */
 .tools {
-  background-image: url("../public//Images/Background/pattern.jpg");
+  background-image: url("../public/Images/Background/pattern.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about {
-  background-image: url("../public//Images/Background/about.jpg");
+  background-image: url("../public/Images/Background/about.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-tree {
-  background-image: url("../public//Images/Background/Tree.jpg");
+  background-image: url("../public/Images/Background/Tree.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .whyVirtuDigiTech {
-  background-image: url("../public//Images/Background/WhyDigiTech.jpg");
+  background-image: url("../public/Images/Background/WhyDigiTech.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

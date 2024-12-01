@@ -1,8 +1,5 @@
 import React from "react";
 import Title from "../components/title";
-import Container from "../components/container";
-import { Button } from "../components/button";
-import SectionTitle from "../components/sectionTitle";
 import MainContainer from "../components/mainContainer";
 import LeftTitle from "../components/leftTitle";
 

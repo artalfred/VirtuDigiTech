@@ -2,7 +2,6 @@
 
 import React from "react";
 import Container from "../components/container";
-import Title from "../components/title";
 import { Button } from "../components/button";
 import SectionTitle from "../components/sectionTitle";
 import BottomAds from "../components/bottomAds";

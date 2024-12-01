@@ -1,5 +1,4 @@
 "use client";
-
 import ContactForm from "../components/contactForm";
 import Container from "../components/container";
 import Title from "../components/title";
