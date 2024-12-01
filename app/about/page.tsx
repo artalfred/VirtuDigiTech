@@ -27,7 +27,8 @@ const About = () => {
                     VirtuDigiTech connects local and international clients with
                     expert web development and virtual assistant services. From
                     IT support and email management to building impactful online
-                    presences, we’re here to empower businesses of all sizes.
+                    presences, we&apos;re here to empower businesses of all
+                    sizes.
                   </p>
                 </div>
               </div>
