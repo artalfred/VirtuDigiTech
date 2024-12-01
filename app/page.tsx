@@ -150,9 +150,11 @@ export default function Home() {
                 </p>
 
                 <div className="mt-6">
-                  <Button width="w-full" background="dark">
-                    Request a Quote
-                  </Button>
+                  <Link href="/contact">
+                    <Button width="w-full" background="dark">
+                      Request a Quote
+                    </Button>
+                  </Link>
                 </div>
               </div>
 
@@ -263,9 +265,11 @@ export default function Home() {
                 </p>
 
                 <div className="mt-6">
-                  <Button width="w-full" background="dark">
-                    Start Saving Time
-                  </Button>
+                  <Link href="/contact">
+                    <Button width="w-full" background="dark">
+                      Start Saving Time
+                    </Button>
+                  </Link>
                 </div>
               </div>
 
@@ -372,9 +376,11 @@ export default function Home() {
                 <h3 className="text-5xl mt-[2rem] text-white">Let's Talk!</h3>
 
                 <div className="mt-[2rem]">
-                  <Button width="w-full" background="light">
-                    Book a Call
-                  </Button>
+                  <Link href="/contact">
+                    <Button width="w-full" background="light">
+                      Book a Call
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
