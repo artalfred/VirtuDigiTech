@@ -9,13 +9,138 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fff;
     --foreground: #ededed;
   }
 }
 
 body {
-  color: var(--foreground);
+  color: #000;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  background-image: url(../public/Images/Hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ///////////////////////////////////////////// */
+.light-button {
+  background-color: #fff;
+  color: #093028;
+  border: 3px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.light-button:hover {
+  background-color: #f5f3f3;
+  color: #093028;
+}
+
+.dark-button {
+  background-color: #036666;
+  color: #fff;
+  border: 3px solid #036666;
+  transition: all 0.3s ease;
+}
+
+.dark-button:hover {
+  background-color: #14746f;
+}
+
+.trans-button {
+  padding: 0.7rem 1.7rem;
+  background-color: transparent;
+  border: 3px solid #036666;
+  color: #036666;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.trans-button:hover {
+  color: #fff;
+  border: 3px solid #036666;
+  background-color: #036666;
+}
+
+/* ///////////////////////////////////////////// */
+/* BACKGROUND */
+.dark-bg-green {
+  background-color: #14746f;
+}
+
+.bg-green {
+  background-color: #093028;
+}
+
+.card-gradient {
+  background: -webkit-linear-gradient(
+    to right,
+    #093028,
+    #237a57
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #093028,
+    #237a57
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ashGray {
+  background-color: #fafafa;
+}
+
+/* ///////////////////////////////////////////// */
+/* COLOR */
+.green {
+  color: #093028;
+}
+
+.dark-green {
+  color: #036666;
+}
+
+/* BOX SHADOW */
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+/* SECTION 2 */
+.tools {
+  background-image: url("../public//Images/Background/pattern.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  background-image: url("../public//Images/Background/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-tree {
+  background-image: url("../public//Images/Background/Tree.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whyVirtuDigiTech {
+  background-image: url("../public//Images/Background/WhyDigiTech.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background-image: url("../public/Images/Footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
