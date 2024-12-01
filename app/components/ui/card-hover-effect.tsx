@@ -1,4 +1,4 @@
-import { cn } from "@/utils";
+import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
