@@ -18,7 +18,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="py-[6rem] h-[50rem] flex items-center hero">
+      <main className="py-[6rem] lg:h-[50rem] md:h-[45rem] sm:h-[35rem] h-[40rem] flex items-center hero">
         <Container>
           <div className=" mt-[4rem] lg:w-[65%] md:w-[100%] sm:w-[100%] w-[100%] grid gap-4">
             <h4 className="font-semibold dark-green uppercase lg:text-start md:text-start sm:text-center text-center">
@@ -41,7 +41,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/about">
-                <Button width="" background="trans">
+                <Button width="" background="light">
                   Learn More
                 </Button>
               </Link>
@@ -51,7 +51,7 @@ export default function Home() {
       </main>
 
       {/* SECTION 2 */}
-      <section className="tools py-[6rem]">
+      <section className="tools lg:py-[6rem] py-[3rem]">
         <Container>
           <div className="grid gap-[1rem]">
             <SectionTitle>Our Expertise, Your Advantage</SectionTitle>
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 3 */}
-      <section className="py-[6rem] ashGray">
+      <section className="lg:py-[6rem] py-[3rem] ashGray">
         <Container>
           <div className="flex justify-center">
             <div className="grid gap-4">
@@ -388,7 +388,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 4 */}
-      <section className="py-[6rem]">
+      <section className="lg:py-[6rem] py-[3rem]">
         <Container>
           <div className="flex justify-center">
             <div className="grid gap-4">
