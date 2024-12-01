@@ -13,7 +13,6 @@ import ProblemSolving from "@/public/Images/Expertise/ProblemSolving.jpg";
 import SoftwareDevelopment from "@/public/Images/Expertise/SoftwareDevelopment.jpg";
 import StrategicCommunication from "@/public/Images/Expertise/StrategicCommunication.jpg";
 import BottomAds from "./components/bottomAds";
-import MainContainer from "./components/mainContainer";
 import { MovingCards } from "./components/movingCards";
 import Link from "next/link";
 
