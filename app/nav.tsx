@@ -6,8 +6,12 @@ import Logo from "@/public/Images/Logo.svg";
 import Image from "next/image";
 import Dropdown from "./components/dropdown";
 import { Button } from "./components/button";
+import { useState } from "react";
+import { div } from "framer-motion/client";
 
 export default function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Disclosure
       as="nav"
@@ -58,20 +62,69 @@ export default function Nav() {
 
           {/* MOBILE MENU */}
           <div className="block lg:hidden md:block sm:block">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="size-9"
-              color="#036666"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <button onClick={() => setIsOpen(true)}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="size-9"
+                color="#036666"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
+
+          {isOpen && (
+            <div className="absolute top-0 bg-white border py-[1rem] rounded-xl shadow-sm w-full">
+              <div>
+                <button
+                  className="float-right pr-[1rem]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="size-8 green"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6 18 18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </div>
+                </button>
+
+                <div className="pt-[2rem]"></div>
+              </div>
+
+              <div className="grid items-center justify-center py-[8rem]">
+                <ul className="grid gap-[3rem]">
+                  <li className="text-center text-2xl font-medium">
+                    <Link href="">Why VirtuDigiTech</Link>
+                  </li>
+                  <li className="text-center text-2xl font-medium">
+                    <Link href="">Solutions</Link>
+                  </li>
+                  <li className="text-center text-2xl font-medium">
+                    <Link href="">Blog Articles</Link>
+                  </li>
+                  <li className="text-center text-2xl font-medium">
+                    <Link href="">About Us</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Disclosure>

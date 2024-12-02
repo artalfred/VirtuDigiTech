@@ -5,7 +5,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xeoqpblp");
   if (state.succeeded) {
     return (
-      <p>
+      <p className="text-center px-[1rem]">
         Thanks for reaching out! We&rsquo;re excited to connect with you and
         will respond as soon as possible!
       </p>
