@@ -15,7 +15,7 @@ export function CardEffect() {
 }
 export const projects = [
   {
-    icon: BudgetFriendly,
+    icon: WebDevelopment,
     title: "Web Development",
     description:
       "Customized solutions designed to boost your digital footprint.",
@@ -49,7 +49,7 @@ export const projects = [
     link: "https://amazon.com",
   },
   {
-    icon: WebDevelopment,
+    icon: BudgetFriendly,
     title: "Budget-Friendly Services",
     description: "High-quality results that fit your budget.",
     link: "https://microsoft.com",
