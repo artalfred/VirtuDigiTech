@@ -144,3 +144,15 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 375px) {
+  .form-size {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .form-size {
+    width: 14rem;
+  }
+}
