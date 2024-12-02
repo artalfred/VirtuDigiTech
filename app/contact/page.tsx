@@ -1,8 +1,24 @@
-"use client";
+import React from "react";
+import { Metadata } from "next";
 import ContactForm from "../components/contactForm";
 import Container from "../components/container";
 import MainContainer from "../components/mainContainer";
 import Title from "../components/title";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Explore a curated collection of insightful articles designed to inform, inspire, and empower. From expert tips to in-depth guides, our content covers a range of topics to keep you informed and ahead of the curve",
+  openGraph: {
+    title: "Contact Us",
+    description:
+      "Explore a curated collection of insightful articles designed to inform, inspire, and empower. From expert tips to in-depth guides, our content covers a range of topics to keep you informed and ahead of the curve",
+    type: "website",
+    locale: "en_US",
+    url: "https://www.virtudigitech.com/contact",
+    siteName: "Contact Us",
+  },
+};
 
 const Contact = () => {
   return (

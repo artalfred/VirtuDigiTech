@@ -9,17 +9,19 @@ import TitlePages from "../components/titlePages";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About VirtuDigiTech",
+  title:
+    "VirtuDigiTech Connects local and international clients with expert web development and virtual assistant",
   description:
     "VirtuDigiTech connects local and international clients with expert web development and virtual assistant services. From IT support and email management to building impactful online presences, we’re here to empower businesses of all sizes.",
   openGraph: {
-    title: "About VirtuDigiTech",
+    title:
+      "VirtuDigiTech Connects local and international clients with expert web development and virtual assistant",
     description:
       "VirtuDigiTech connects local and international clients with expert web development and virtual assistant services. From IT support and email management to building impactful online presences, we’re here to empower businesses of all sizes.",
     type: "website",
     locale: "en_US",
     url: "https://www.virtudigitech.com/about",
-    siteName: "Your Trusted Growth Partner",
+    siteName: "VirtuDigiTech Connects local and international clients",
   },
 };
 

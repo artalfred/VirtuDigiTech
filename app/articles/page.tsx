@@ -2,6 +2,22 @@ import React from "react";
 import Title from "../components/title";
 import MainContainer from "../components/mainContainer";
 import LeftTitle from "../components/leftTitle";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "A blog for business owners",
+  description:
+    "Explore a curated collection of insightful articles designed to inform, inspire, and empower. From expert tips to in-depth guides, our content covers a range of topics to keep you informed and ahead of the curve.",
+  openGraph: {
+    title: "A blog for business owners",
+    description:
+      "Explore a curated collection of insightful articles designed to inform, inspire, and empower. From expert tips to in-depth guides, our content covers a range of topics to keep you informed and ahead of the curve.",
+    type: "website",
+    locale: "en_US",
+    url: "https://www.virtudigitech.com/articles",
+    siteName: "A blog for business owners",
+  },
+};
 
 const Articles = () => {
   return (
