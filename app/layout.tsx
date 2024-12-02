@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.jpeg" sizes="any" />
+        <link rel="icon" href="/icon.jpeg" sizes="any" type="image/x-icon" />
       </head>
       <body className={Park.className}>
         <Nav />
