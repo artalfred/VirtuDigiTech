@@ -10,18 +10,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "VirtuDigiTech Connects local and international clients with expert web development and virtual assistant",
+    "Connects local and international clients with expert web development and virtual assistant",
   description:
     "VirtuDigiTech connects local and international clients with expert web development and virtual assistant services. From IT support and email management to building impactful online presences, we’re here to empower businesses of all sizes.",
   openGraph: {
     title:
-      "VirtuDigiTech Connects local and international clients with expert web development and virtual assistant",
+      "Connects local and international clients with expert web development and virtual assistant",
     description:
       "VirtuDigiTech connects local and international clients with expert web development and virtual assistant services. From IT support and email management to building impactful online presences, we’re here to empower businesses of all sizes.",
     type: "website",
     locale: "en_US",
     url: "https://www.virtudigitech.com/about",
-    siteName: "VirtuDigiTech Connects local and international clients",
+    siteName: "Connects local and international clients",
   },
 };
 

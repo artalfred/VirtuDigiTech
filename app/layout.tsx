@@ -11,7 +11,7 @@ const Park = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "VirtuDigiTech - Your Digital Growth Partner",
+  title: "Your Digital Growth Partner",
   description:
     "Specializing in Web Development, Email Marketing, Strategic Planning, and IT Support, we deliver solutions to help your business thrive in the digital age.",
   openGraph: {

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Metadata } from "next";
 import ContactForm from "../components/contactForm";
 import Container from "../components/container";
 import MainContainer from "../components/mainContainer";
