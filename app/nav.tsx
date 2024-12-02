@@ -7,7 +7,6 @@ import Image from "next/image";
 import Dropdown from "./components/dropdown";
 import { Button } from "./components/button";
 import { useState } from "react";
-import { div } from "framer-motion/client";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +21,7 @@ export default function Nav() {
           <div className="flex gap-[3rem] items-center">
             <div className="flex shrink-0 items-center">
               <Link href="/">
-                <Image src={Logo} alt="VirtuDigiTech" height={80} />
+                <Image src={Logo} alt="VirtuDigiTech" height={70} />
               </Link>
             </div>
           </div>
@@ -78,53 +77,70 @@ export default function Nav() {
               </svg>
             </button>
           </div>
+        </div>
+      </div>
 
-          {isOpen && (
-            <div className="absolute top-0 bg-white border py-[1rem] rounded-xl shadow-sm w-full">
+      <div>
+        <div
+          className={`absolute top-0 ${
+            isOpen ? "right-0" : "right-[-100rem]"
+          } bg-white border py-[1rem] rounded-xl shadow-sm w-full transition-all duration-300 h-screen`}
+        >
+          <div className="flex items-center justify-between px-[1rem]">
+            <div>
+              <Image src={Logo} alt="Logo" height={70} />
+            </div>
+
+            <button onClick={() => setIsOpen(false)}>
               <div>
-                <button
-                  className="float-right pr-[1rem]"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-8 green"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+            <div className="grid items-center justify-center w-full">
+              <ul className="grid gap-[2rem]">
+                <li
+                  className="text-center text-2xl font-medium"
                   onClick={() => setIsOpen(false)}
                 >
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="size-8 green"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6 18 18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </div>
-                </button>
-
-                <div className="pt-[2rem]"></div>
-              </div>
-
-              <div className="grid items-center justify-center py-[8rem]">
-                <ul className="grid gap-[3rem]">
-                  <li className="text-center text-2xl font-medium">
-                    <Link href="">Why VirtuDigiTech</Link>
-                  </li>
-                  <li className="text-center text-2xl font-medium">
-                    <Link href="">Solutions</Link>
-                  </li>
-                  <li className="text-center text-2xl font-medium">
-                    <Link href="">Blog Articles</Link>
-                  </li>
-                  <li className="text-center text-2xl font-medium">
-                    <Link href="">About Us</Link>
-                  </li>
-                </ul>
-              </div>
+                  <Link href="/WhyVirtudigitech">Why VirtuDigiTech</Link>
+                </li>
+                <li
+                  className="text-center text-2xl font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Link href="/">Solutions</Link>
+                </li>
+                <li
+                  className="text-center text-2xl font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Link href="/articles">Blog Articles</Link>
+                </li>
+                <li
+                  className="text-center text-2xl font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Link href="/about">About Us</Link>
+                </li>
+              </ul>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </Disclosure>
