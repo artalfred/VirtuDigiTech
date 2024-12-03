@@ -30,7 +30,7 @@ export const Footer = () => {
               </li>
 
               <li className="text-[16px] font-medium">
-                <Link href="/WhyVirtuDigiTech">Why VirtuDigiTech</Link>
+                <Link href="/WhyVirtudigitech">Why VirtuDigiTech</Link>
               </li>
               <li className="text-[16px] font-medium">
                 <Link href="/articles">Blog Articles</Link>
