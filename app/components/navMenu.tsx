@@ -1,18 +1,15 @@
 "use client";
 
 import * as React from "react";
-
 import { cn } from "@/lib/utils";
-// import { Icons } from "@/app/components/ui/Icons";
 import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/app/components/ui/navigation-menu";
+import Link from "next/link";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -22,25 +19,25 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Virtual Solutions",
-    href: "/docs/primitives/hover-card",
+    href: "/contact",
     description:
       "We provide reliable, efficient, and personalized support to save you time and boost your productivity",
   },
   {
     title: "App Development",
-    href: "/docs/primitives/progress",
+    href: "/contact",
     description:
       "Transform your ideas into powerful mobile and web applications with our expert app development services.",
   },
   {
     title: "Domain Management Services",
-    href: "/docs/primitives/scroll-area",
+    href: "/contact",
     description:
       " Simplify domain operations with expert registration, DNS configuration, and seamless domain hosting services.",
   },
   {
     title: "Automation Services",
-    href: "/docs/primitives/tabs",
+    href: "/contact",
     description:
       "Streamline workflows and boost efficiency with custom automation solutions, including task scheduling, email triggers, and integration across platforms.",
   },
@@ -60,15 +57,23 @@ export function Solutions() {
           <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
+              {components.map((list) => {
+                return (
+                  <Link
+                    href="/contact"
+                    className={cn(
+                      "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                    )}
+                  >
+                    <div className="text-sm font-medium leading-none">
+                      {list.title}
+                    </div>
+                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                      {list.description}
+                    </p>
+                  </Link>
+                );
+              })}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -76,29 +81,3 @@ export function Solutions() {
     </NavigationMenu>
   );
 }
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
