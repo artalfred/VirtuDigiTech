@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Logo from "@/public/Images/Logo.png";
 import Link from "next/link";
+import Facebook from "@/public/Images/Icons/facebook.png";
+import Linkedin from "@/public/Images/Icons/linkedin.png";
 
 export const Footer = () => {
   return (
@@ -19,6 +21,11 @@ export const Footer = () => {
                 Delivering top-notch web development and virtual assistant
                 services to help businesses thrive in a digital-first world.
               </p>
+
+              <div className="flex gap-[1rem] mt-6">
+                <Image src={Facebook} alt="facebook" height={30} />
+                <Image src={Linkedin} alt="linkedin" height={30} />
+              </div>
             </div>
           </div>
 

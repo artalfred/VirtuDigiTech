@@ -43,7 +43,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Server Setup and Configuration",
-    href: "/docs/primitives/tooltip",
+    href: "/contact",
     description:
       "Reliable server setup services, including configuration, optimization, and security enhancements, ensuring robust performance and seamless scalability for your applications.",
   },
@@ -54,7 +54,9 @@ export function Solutions() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+          <NavigationMenuTrigger>
+            <span className="green">Solutions</span>
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((list) => {
