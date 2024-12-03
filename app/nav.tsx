@@ -4,10 +4,11 @@ import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import Logo from "@/public/Images/Logo.svg";
 import Image from "next/image";
-import Dropdown from "./components/dropdown";
 import { Button } from "./components/button";
 import { useState } from "react";
 import Footer_Logo from "../public/Images/Footer_Logo.svg";
+import { Solutions } from "./components/navMenu";
+import { navigationMenuTriggerStyle } from "./components/ui/navigation-menu";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,27 +31,29 @@ export default function Nav() {
           {/* BUTTON */}
           <div className="hidden lg:block md:hidden sm:hidden">
             <div className="hidden sm:ml-6 sm:block">
-              <div className="flex items-center gap-[2rem]">
+              <div className="flex items-center gap-[1rem]">
                 <Link
                   href="/WhyVirtudigitech"
-                  className="decoration-slate-950 text-[14px] font-medium green"
+                  className={`decoration-slate-950 text-[14px] font-medium green ${navigationMenuTriggerStyle()}`}
                 >
                   Why VirtuDigiTech
                 </Link>
-                <Dropdown />
-
+                <Link href="/">
+                  <Solutions />
+                </Link>
                 <Link
                   href="/articles"
-                  className="decoration-slate-950 text-[14px] font-medium green"
+                  className={`decoration-slate-950 text-[14px] font-medium green ${navigationMenuTriggerStyle()}`}
                 >
                   Blog Articles
                 </Link>
                 <Link
                   href="/about"
-                  className="decoration-slate-950 text-[14px] font-medium green"
+                  className={`decoration-slate-950 text-[14px] font-medium green ${navigationMenuTriggerStyle()}`}
                 >
                   About Us
                 </Link>
+
                 <Link href="/contact">
                   <Button background="dark" width="">
                     Get in touch
