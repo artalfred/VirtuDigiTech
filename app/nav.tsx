@@ -85,7 +85,7 @@ export default function Nav() {
         <div
           className={`absolute top-0 ${
             isOpen ? "right-0" : "right-[-100rem]"
-          } bg-green border py-[1rem] rounded-xl shadow-sm w-full transition-all duration-300 h-screen`}
+          } bg-green border py-[1rem] shadow-sm w-full transition-all duration-300 h-screen`}
         >
           <div className="flex items-center justify-between px-[1rem]">
             <div>
