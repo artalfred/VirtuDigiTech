@@ -7,6 +7,7 @@ import Image from "next/image";
 import Dropdown from "./components/dropdown";
 import { Button } from "./components/button";
 import { useState } from "react";
+import Footer_Logo from "../public/Images/Footer_Logo.svg";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Nav() {
           <div className="flex gap-[3rem] items-center">
             <div className="flex shrink-0 items-center">
               <Link href="/">
-                <Image src={Logo} alt="VirtuDigiTech" height={70} />
+                <Image src={Logo} alt="VirtuDigiTech" height={80} />
               </Link>
             </div>
           </div>
@@ -84,11 +85,11 @@ export default function Nav() {
         <div
           className={`absolute top-0 ${
             isOpen ? "right-0" : "right-[-100rem]"
-          } bg-white border py-[1rem] rounded-xl shadow-sm w-full transition-all duration-300 h-screen`}
+          } bg-green border py-[1rem] rounded-xl shadow-sm w-full transition-all duration-300 h-screen`}
         >
           <div className="flex items-center justify-between px-[1rem]">
             <div>
-              <Image src={Logo} alt="Logo" height={70} />
+              <Image src={Footer_Logo} alt="Logo" height={80} />
             </div>
 
             <button onClick={() => setIsOpen(false)}>
@@ -99,7 +100,7 @@ export default function Nav() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-8 green"
+                  className="size-8 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -111,29 +112,29 @@ export default function Nav() {
             </button>
           </div>
 
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-            <div className="grid items-center justify-center w-full">
+          <div className="mt-[4rem] w-full">
+            <div className="grid pl-[3rem] w-full">
               <ul className="grid gap-[2rem]">
                 <li
-                  className="text-center text-2xl font-medium"
+                  className="text-start text-white lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/WhyVirtudigitech">Why VirtuDigiTech</Link>
                 </li>
                 <li
-                  className="text-center text-2xl font-medium"
+                  className="text-start text-white text-2xl lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/">Solutions</Link>
                 </li>
                 <li
-                  className="text-center text-2xl font-medium"
+                  className="text-start text-white text-2xl lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/articles">Blog Articles</Link>
                 </li>
                 <li
-                  className="text-center text-2xl font-medium"
+                  className="text-start text-white text-2xl lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/about">About Us</Link>
