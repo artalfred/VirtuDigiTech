@@ -14,7 +14,7 @@ function WhyVirtuDigiTech() {
     <>
       <Container>
         <div>
-          <section className="whyVirtuDigiTech px-[1rem] rounded-2xl mt-[6rem] py-[6rem] h-[30rem] flex items-center">
+          <section className="whyVirtuDigiTech px-[1rem] rounded-2xl mt-[6rem] py-[6rem] lg:h-[30rem] h-[35rem] flex items-center">
             <div>
               <div className="grid gap-[1rem]">
                 <h4 className="font-medium text-white uppercase text-center">

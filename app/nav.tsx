@@ -12,6 +12,38 @@ import { navigationMenuTriggerStyle } from "./components/ui/navigation-menu";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSolutionOpen, setIsSolutionOpen] = useState(false);
+
+  const solutionToggle = () => {
+    setIsSolutionOpen(!isSolutionOpen);
+  };
+
+  const solution = [
+    {
+      id: 1,
+      title: "Web Development",
+    },
+    {
+      id: 2,
+      title: "Virtual Solutions",
+    },
+    {
+      id: 3,
+      title: "App Development",
+    },
+    {
+      id: 4,
+      title: "Domain Management System",
+    },
+    {
+      id: 5,
+      title: "Automation Services",
+    },
+    {
+      id: 6,
+      title: "Server Setup And Configuration",
+    },
+  ];
 
   return (
     <Disclosure
@@ -116,28 +148,82 @@ export default function Nav() {
           </div>
 
           <div className="mt-[4rem] w-full">
-            <div className="grid pl-[3rem] w-full">
-              <ul className="grid gap-[2rem]">
+            <div className="grid px-[2rem] w-full">
+              <ul className="grid gap-[1rem]">
                 <li
-                  className="text-start text-white lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
+                  className="text-start text-white  text-[18px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/WhyVirtudigitech">Why VirtuDigiTech</Link>
                 </li>
-                <li
-                  className="text-start text-white text-2xl lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Link href="/">Solutions</Link>
+                <li className="text-start text-white text-[20px] font-medium flex justify-between items-center">
+                  <button onClick={solutionToggle}>
+                    {isSolutionOpen ? "Solutions" : "Solutions"}
+                  </button>
+                  {isSolutionOpen ? (
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="size-5"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+                    </span>
+                  ) : (
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="size-5"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M5 12h14"
+                        />
+                      </svg>
+                    </span>
+                  )}
                 </li>
+                {!isSolutionOpen && (
+                  <div className="pl-[1.4rem] pb-4">
+                    <ul className="grid gap-[.7rem]">
+                      {solution.map((solution) => {
+                        return (
+                          <li key={solution.id}>
+                            <Link
+                              href="/contact"
+                              onClick={() => setIsOpen(false)}
+                              className="text-white text-[14px] font-medium"
+                            >
+                              {solution.title}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
+
                 <li
-                  className="text-start text-white text-2xl lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
+                  className="text-start text-white text-[20px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/articles">Blog Articles</Link>
                 </li>
                 <li
-                  className="text-start text-white text-2xl lg:text-2xl md:text-2xl sm:text-[20px] text-[20px] font-medium"
+                  className="text-start text-white text-[20px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/about">About Us</Link>

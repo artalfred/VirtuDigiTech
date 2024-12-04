@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./container";
 import SectionTitle from "./sectionTitle";
 import { Button } from "./button";
+import Link from "next/link";
 
 interface BottomAdsProps {
   title: string;
@@ -24,9 +25,11 @@ const BottomAds = ({ title, description }: BottomAdsProps) => {
             </div>
 
             <div className="flex justify-center mt-4">
-              <Button background="light" width="">
-                Contact Us
-              </Button>
+              <Link href="/contact">
+                <Button background="light" width="">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
