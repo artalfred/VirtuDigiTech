@@ -160,7 +160,7 @@ export default function Nav() {
                   <button onClick={solutionToggle}>
                     {isSolutionOpen ? "Solutions" : "Solutions"}
                   </button>
-                  {isSolutionOpen ? (
+                  {!isSolutionOpen ? (
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@ export default function Nav() {
                     </span>
                   )}
                 </li>
-                {!isSolutionOpen && (
+                {isSolutionOpen && (
                   <div className="pl-[1.4rem] pb-4">
                     <ul className="grid gap-[.7rem]">
                       {solution.map((solution) => {
