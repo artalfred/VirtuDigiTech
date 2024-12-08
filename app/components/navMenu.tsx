@@ -14,12 +14,12 @@ import Link from "next/link";
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Web Development",
-    href: "/contact",
+    href: "/solutions/web-development",
     description: "Elevate Your Online Presence with Custom Web Solutions",
   },
   {
     title: "Virtual Solutions",
-    href: "/contact",
+    href: "/solutions/virtual-solutions",
     description:
       "We provide reliable, efficient, and personalized support to save you time and boost your productivity",
   },
@@ -62,7 +62,7 @@ export function Solutions() {
               {components.map((list) => {
                 return (
                   <Link
-                    href="/contact"
+                    href={list.href}
                     key={list.title}
                     className={cn(
                       "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"

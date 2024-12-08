@@ -22,10 +22,12 @@ export default function Nav() {
     {
       id: 1,
       title: "Web Development",
+      link: "/solutions/web-development",
     },
     {
       id: 2,
       title: "Virtual Solutions",
+      link: "/solutions/virtual-solutions",
     },
     {
       id: 3,
@@ -70,9 +72,9 @@ export default function Nav() {
                 >
                   Why VirtuDigiTech
                 </Link>
-                <Link href="/">
+                <span>
                   <Solutions />
-                </Link>
+                </span>
                 <Link
                   href="/articles"
                   className={`decoration-slate-950 text-[14px] font-medium green ${navigationMenuTriggerStyle()}`}
@@ -203,7 +205,7 @@ export default function Nav() {
                         return (
                           <li key={solution.id}>
                             <Link
-                              href="/contact"
+                              href={solution.link ?? ""}
                               onClick={() => setIsOpen(false)}
                               className="text-white text-[14px] font-medium"
                             >
