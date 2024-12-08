@@ -13,9 +13,14 @@ import { navigationMenuTriggerStyle } from "./components/ui/navigation-menu";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSolutionOpen, setIsSolutionOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   const solutionToggle = () => {
     setIsSolutionOpen(!isSolutionOpen);
+  };
+
+  const resourcesToggle = () => {
+    setIsResourcesOpen(!isResourcesOpen);
   };
 
   const solution = [
@@ -47,6 +52,18 @@ export default function Nav() {
     },
   ];
 
+  const resources = [
+    {
+      id: 1,
+      title: "Blogs",
+      link: "/resources/blogs",
+    },
+    {
+      id: 2,
+      title: "FAQs",
+      link: "/resources/FAQs",
+    },
+  ];
   return (
     <Disclosure
       as="nav"
@@ -153,50 +170,87 @@ export default function Nav() {
             <div className="grid px-[2rem] w-full">
               <ul className="grid gap-[1rem]">
                 <li
-                  className="text-start text-white  text-[18px] font-medium"
+                  className="text-start text-white  text-[17px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Link href="/WhyVirtudigitech">Why VirtuDigiTech</Link>
+                  <Link href="/WhyVirtudigitech" className="flex gap-2">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="size-6"
+                      >
+                        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                      </svg>
+                    </span>
+                    Why VirtuDigiTech
+                  </Link>
                 </li>
                 <li className="text-start text-white text-[20px] font-medium flex justify-between items-center">
-                  <button onClick={solutionToggle}>
-                    {isSolutionOpen ? "Solutions" : "Solutions"}
+                  <button
+                    onClick={solutionToggle}
+                    className={`flex items-center justify-between gap-2 w-full ${
+                      isSolutionOpen ? "dark-green" : "text-white"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="size-6"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 0 0-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 0 0-2.282.819l-.922 1.597a1.875 1.875 0 0 0 .432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 0 0 0 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 0 0-.432 2.385l.922 1.597a1.875 1.875 0 0 0 2.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 0 0 2.28-.819l.923-1.597a1.875 1.875 0 0 0-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 0 0 0-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 0 0-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 0 0-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 0 0-1.85-1.567h-1.843ZM12 15.75a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5Z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      Solutions
+                    </div>
+
+                    <div>
+                      {!isSolutionOpen ? (
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M12 4.5v15m7.5-7.5h-15"
+                            />
+                          </svg>
+                        </span>
+                      ) : (
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M5 12h14"
+                            />
+                          </svg>
+                        </span>
+                      )}
+                    </div>
                   </button>
-                  {!isSolutionOpen ? (
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="size-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                      </svg>
-                    </span>
-                  ) : (
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="size-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M5 12h14"
-                        />
-                      </svg>
-                    </span>
-                  )}
                 </li>
                 {isSolutionOpen && (
                   <div className="pl-[1.4rem] pb-4">
@@ -207,7 +261,7 @@ export default function Nav() {
                             <Link
                               href={solution.link ?? ""}
                               onClick={() => setIsOpen(false)}
-                              className="text-white text-[14px] font-medium"
+                              className="text-white text-[16px] font-medium"
                             >
                               {solution.title}
                             </Link>
@@ -218,17 +272,112 @@ export default function Nav() {
                   </div>
                 )}
 
-                <li
-                  className="text-start text-white text-[20px] font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Link href="/articles">Blog Articles</Link>
+                <li className="text-start text-white text-[20px] font-medium">
+                  <button
+                    onClick={resourcesToggle}
+                    className={`flex items-center justify-between w-full ${
+                      isResourcesOpen ? "dark-green" : "text-white"
+                    }`}
+                  >
+                    <div className="flex gap-2">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="size-6"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M1.5 7.125c0-1.036.84-1.875 1.875-1.875h6c1.036 0 1.875.84 1.875 1.875v3.75c0 1.036-.84 1.875-1.875 1.875h-6A1.875 1.875 0 0 1 1.5 10.875v-3.75Zm12 1.5c0-1.036.84-1.875 1.875-1.875h5.25c1.035 0 1.875.84 1.875 1.875v8.25c0 1.035-.84 1.875-1.875 1.875h-5.25a1.875 1.875 0 0 1-1.875-1.875v-8.25ZM3 16.125c0-1.036.84-1.875 1.875-1.875h5.25c1.036 0 1.875.84 1.875 1.875v2.25c0 1.035-.84 1.875-1.875 1.875h-5.25A1.875 1.875 0 0 1 3 18.375v-2.25Z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      Resources
+                    </div>
+
+                    <div>
+                      {!isResourcesOpen ? (
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M12 4.5v15m7.5-7.5h-15"
+                            />
+                          </svg>
+                        </span>
+                      ) : (
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M5 12h14"
+                            />
+                          </svg>
+                        </span>
+                      )}
+                    </div>
+                  </button>
                 </li>
+                {isResourcesOpen && (
+                  <div className="pl-[1.4rem] pb-4">
+                    <ul className="grid gap-[.7rem]">
+                      {resources.map((resources) => {
+                        return (
+                          <li key={resources.id}>
+                            <Link
+                              href={resources.link ?? ""}
+                              onClick={() => setIsOpen(false)}
+                              className="text-white text-[16px] font-medium"
+                            >
+                              {resources.title}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
                 <li
                   className="text-start text-white text-[20px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Link href="/about">About Us</Link>
+                  <Link href="/about" className="flex items-center gap-2">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="size-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                        />
+                      </svg>
+                    </span>
+                    About Us
+                  </Link>
                 </li>
               </ul>
             </div>
