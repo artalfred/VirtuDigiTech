@@ -58,12 +58,10 @@ export const Footer = () => {
                 <Link href="/">support@virtudigitech.com</Link>
               </li>
               <li className="text-[16px] font-medium">
-                <Link href="/">+63 956 7612 014</Link>
+                <Link href="/">+63 967 1348 488</Link>
               </li>
               <li className="text-[16px] font-medium">
-                <Link href="/">
-                  Private Road 200, Mandaluyong City, Philippines
-                </Link>
+                <Link href="/">Taguig City, Philippines</Link>
               </li>
             </ul>
           </div>

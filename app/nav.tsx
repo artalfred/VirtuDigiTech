@@ -138,7 +138,7 @@ export default function Nav() {
       <div>
         <div
           className={`absolute top-0 ${
-            isOpen ? "right-0" : "right-[-100rem]"
+            isOpen ? "right-0" : "right-[-340rem]"
           } bg-green py-[1rem] w-full transition-all duration-300 h-screen`}
         >
           <div className="flex items-center justify-between px-[1rem]">
