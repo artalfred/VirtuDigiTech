@@ -7,63 +7,157 @@ import Linkedin from "@/public/Images/Icons/linkedin.png";
 
 export const Footer = () => {
   return (
-    <footer className="py-[4rem] ashGray">
+    <footer className="pt-[4rem] ashGray">
       <div className="px-[1rem] sm:px-[2rem] md:px-[2rem] lg:px-[6rem]">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[2rem]">
+        <div className="flex items-center gap-[4rem] pb-[1.5rem]">
           <div>
-            <div className="flex shrink-0 items-center">
-              <Image src={Logo} alt="VirtuDigiTech" height={80} />
-            </div>
-
-            <div className="mt-4">
-              <h3 className="text-[18px] font-semibold green">About Us</h3>
-              <p className="mt-2">
-                Delivering top-notch web development and virtual assistant
-                services to help businesses thrive in a digital-first world.
-              </p>
-
-              <div className="flex gap-[1rem] mt-6">
-                <Image src={Facebook} alt="facebook" height={30} />
-                <Image src={Linkedin} alt="linkedin" height={30} />
-              </div>
-            </div>
+            <h5 className="font-medium text-sm]">Follow Us On</h5>
           </div>
 
-          <div className="lg:mt-[2rem] md:mt-[2rem] sm:mt-[1rem] mt-[0rem] grid lg:justify-center md:justify-center sm:justify-start justify-start">
-            <h4 className="text-[20px] font-semibold green">Quick Links</h4>
-            <ul className="lg:mt-[2rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-[1rem]">
-              <li className="text-[16px] font-medium">
-                <Link href="/">Home</Link>
+          <div className="flex gap-[1.6rem]">
+            <Image src={Facebook} alt="facebook" height={25} />
+            <Image src={Linkedin} alt="linkedin" height={25} />
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[2rem] border-t-2 py-[2rem]">
+          <div className="lg:mt-[0rem] md:mt-[2rem] sm:mt-[1rem] mt-[0rem]">
+            <h4 className="text-[16px] font-medium green lg:pb-[1.6rem] pb-[0rem]">
+              Solutions
+            </h4>
+            <ul className="lg:mt-[0rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-3">
+              <li>
+                <Link href="/" className="text-[15px]">
+                  Web Development
+                </Link>
               </li>
 
-              <li className="text-[16px] font-medium">
-                <Link href="/WhyVirtudigitech">Why VirtuDigiTech</Link>
+              <li>
+                <Link href="/WhyVirtudigitech" className="text-[15px]">
+                  App Development
+                </Link>
               </li>
-              <li className="text-[16px] font-medium">
-                <Link href="/articles">Blog Articles</Link>
+              <li>
+                <Link href="/articles" className="text-[15px]">
+                  Virtual Solutions
+                </Link>
               </li>
-              <li className="text-[16px] font-medium">
-                <Link href="/about">About Us</Link>
+              <li>
+                <Link href="/about" className="text-[15px]">
+                  Domain Management Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-[15px]">
+                  Automation Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-[15px]">
+                  Server SetUp And Configuration
+                </Link>
               </li>
             </ul>
           </div>
 
-          <div className="lg:mt-[2rem] md:mt-[2rem] sm:mt-[1rem] mt-[0rem] grid lg:justify-end md:justify-center sm:justify-start justify-start">
-            <h4 className="text-[20px] font-semibold green">Contact Us</h4>
-            <ul className="lg:mt-[2rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-[1rem]">
-              <li className="text-[16px] font-medium">
-                <Link href="/">hello@virtudigitech.com</Link>
+          <div className="lg:mt-[0rem] md:mt-[2rem] sm:mt-[1rem] mt-[0rem]">
+            <h4 className="text-[16px] font-medium green lg:pb-[1.6rem] pb-[0rem]">
+              VirtuDigiTech
+            </h4>
+            <ul className="lg:mt-[0rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-3">
+              <li>
+                <Link href="/" className="text-[15px]">
+                  Home
+                </Link>
               </li>
-              <li className="text-[16px] font-medium">
-                <Link href="/">support@virtudigitech.com</Link>
+
+              <li>
+                <Link href="/WhyVirtudigitech" className="text-[15px]">
+                  Why VirtuDigiTech
+                </Link>
               </li>
-              <li className="text-[16px] font-medium">
-                <Link href="/">+63 967 1348 488</Link>
+              <li>
+                <Link href="/articles" className="text-[15px]">
+                  Blog Articles
+                </Link>
               </li>
-              <li className="text-[16px] font-medium">
-                <Link href="/">Taguig City, Philippines</Link>
+              <li>
+                <Link href="/about" className="text-[15px]">
+                  About Us
+                </Link>
               </li>
             </ul>
+          </div>
+
+          <div className="lg:mt-[0rem] md:mt-[2rem] sm:mt-[1rem] mt-[0rem]">
+            <h4 className="text-[16px] font-medium green lg:pb-[1.6rem] pb-[0rem]">
+              Resources
+            </h4>
+            <ul className="lg:mt-[0rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-3">
+              <li>
+                <Link href="/" className="text-[15px]">
+                  Blogs
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/WhyVirtudigitech" className="text-[15px]">
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link href="/articles" className="text-[15px]">
+                  Careers
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="lg:mt-[0rem] md:mt-[2rem] sm:mt-[1rem] mt-[0rem]">
+            <h4 className="text-[16px] font-medium green lg:pb-[1.6rem] pb-[0rem]">
+              VirtuDigiTech
+            </h4>
+            <ul className="lg:mt-[0rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-3">
+              <li>
+                <Link href="/" className="text-[15px]">
+                  hello@virtudigitech.com
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/WhyVirtudigitech" className="text-[15px]">
+                  support@virtudigitech.com
+                </Link>
+              </li>
+              <li>
+                <Link href="/articles" className="text-[15px]">
+                  WhatsApp: +63 967 1348 488
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-[15px]">
+                  Taguig City, Philippines
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t-2 py-2 lg:flex md:flex sm:grid grid items-center lg:justify-between md:justify-center sm:justify-center justify-center">
+          <div className="lg:flex md:flex sm:grid grid justify-center items-center lg:gap-[3rem] gap-[0rem]">
+            <Image src={Logo} alt="VirtuDigiTech" height={70} />
+
+            <div className="lg:text-start md:text-start sm:text-center text-center py-3">
+              <Link href="/" className="text-[14px]">
+                Terms
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-[14px] lg:text-start md:text-start sm:text-center text-center">
+              © Copyright 2024 VirtuDigiTech - All Rights Reserved
+            </p>
           </div>
         </div>
       </div>
