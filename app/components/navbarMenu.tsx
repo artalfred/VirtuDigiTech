@@ -27,37 +27,37 @@ function Navbar({ className }: { className?: string }) {
           <div className="text-sm grid grid-cols-2 gap-10 p-5">
             <ProductItem
               title="Web Development"
-              href="https://algochurn.com"
+              href="/solutions/web-development"
               src={Web}
               description="Elevate Your Online Presence with Custom Web Solutions..."
             />
             <ProductItem
               title="Virtual Solutions"
-              href="https://tailwindmasterkit.com"
+              href="/solutions/virtual-solutions"
               src={Virtual}
               description="We provide reliable, efficient, and personalized support to save you time..."
             />
             <ProductItem
               title="App Development"
-              href="https://gomoonbeam.com"
+              href="/solutions/app-development"
               src={App}
               description="Transform your ideas into powerful mobile and web applications with our expert..."
             />
             <ProductItem
               title="Domain Management Services"
-              href="https://userogue.com"
+              href="/solutions/domain-management-services"
               src={Domain}
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI..."
             />
             <ProductItem
               title="Automation Services"
-              href="https://userogue.com"
+              href="/solutions/automate-services"
               src={Automation}
               description="Streamline workflows and boost efficiency with custom automation solutions..."
             />
             <ProductItem
               title="Server Setup Configuration"
-              href="https://userogue.com"
+              href="/solutions/server-setup-configuration"
               src={Server}
               description="Reliable server setup services, including configuration, optimization, and security..."
             />

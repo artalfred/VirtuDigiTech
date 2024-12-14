@@ -7,6 +7,7 @@ import Tree from "@/public/Images/Background/Tree.jpg";
 import BottomAds from "../components/bottomAds";
 import TitlePages from "../components/titlePages";
 import { Metadata } from "next";
+import { MovingCards } from "../components/movingCards";
 
 export const metadata: Metadata = {
   title:
@@ -98,6 +99,11 @@ const About = () => {
           </div>
         </MainContainer>
       </section>
+
+      <div>
+        <MovingCards />
+      </div>
+
       <BottomAds
         title="Stay Connected: Let&rsquo;s Start the Conversation"
         description="We&rsquo;re here to listen, assist, and collaborate. Reach out to us today and let&rsquo;s create something extraordinary together!"

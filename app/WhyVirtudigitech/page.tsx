@@ -47,7 +47,7 @@ function WhyVirtuDigiTech() {
           </section>
         </div>
 
-        <section className="lg:py-[4rem] py-[4rem] lg:px-[4rem]">
+        <section className="lg:py-[4rem] py-[4rem]">
           <div>
             <SectionTitle>Why Choose Us?</SectionTitle>
           </div>
