@@ -1,14 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, MenuItem, ProductItem } from "@/app/components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
 
 import Web from "@/public/Images/Icons/Web.png";
-import App from "@/public/Images/Icons/App.png";
 import Automation from "@/public/Images/Icons/Automation.png";
 import Virtual from "@/public/Images/Icons/Virtual.png";
 import Domain from "@/public/Images/Icons/Domain.png";
-import Server from "@/public/Images/Icons/Server.png";
 
 export function NavbarMenu() {
   return (
@@ -38,12 +35,6 @@ function Navbar({ className }: { className?: string }) {
               description="We provide reliable, efficient, and personalized support to save you time..."
             />
             <ProductItem
-              title="App Development"
-              href="/solutions/app-development"
-              src={App}
-              description="Transform your ideas into powerful mobile and web applications with our expert..."
-            />
-            <ProductItem
               title="Domain Management Services"
               href="/solutions/domain-management-services"
               src={Domain}
@@ -54,12 +45,6 @@ function Navbar({ className }: { className?: string }) {
               href="/solutions/automate-services"
               src={Automation}
               description="Streamline workflows and boost efficiency with custom automation solutions..."
-            />
-            <ProductItem
-              title="Server Setup Configuration"
-              href="/solutions/server-setup-configuration"
-              src={Server}
-              description="Reliable server setup services, including configuration, optimization, and security..."
             />
           </div>
         </MenuItem>

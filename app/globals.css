@@ -125,6 +125,20 @@ body {
   background-size: cover;
 }
 
+.WebDev {
+  background-image: url("../public/Images/Background/WebDev.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.VirtualSolutions {
+  background-image: url("../public/Images/Background/VirtualSolutions.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 footer {
   background-image: url("../public/Images/Footer.jpg");
   background-position: center;

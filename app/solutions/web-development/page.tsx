@@ -1,7 +1,8 @@
+"use client";
+
 import { Button } from "@/app/components/button";
 import Container from "@/app/components/container";
 import LeftTitle from "@/app/components/leftTitle";
-import List from "@/app/components/list";
 import SectionTitle from "@/app/components/sectionTitle";
 import TitlePages from "@/app/components/titlePages";
 import Image from "next/image";
@@ -21,7 +22,7 @@ const WebDevelopment = () => {
   return (
     <div>
       <Container>
-        <section className="whyVirtuDigiTech px-[1rem] rounded-2xl mt-[6rem] py-[6rem] lg:h-[35rem] h-[35rem] flex items-center">
+        <section className="WebDev px-[1rem] rounded-2xl mt-[6rem] py-[6rem] lg:h-[35rem] h-[35rem] flex items-center">
           <div>
             <div className="grid gap-[1rem]">
               <div className="flex justify-center">

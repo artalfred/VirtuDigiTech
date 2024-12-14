@@ -34,28 +34,27 @@ export const Footer = () => {
               </li>
 
               <li>
-                <Link href="/WhyVirtudigitech" className="text-[15px]">
-                  App Development
-                </Link>
-              </li>
-              <li>
-                <Link href="/articles" className="text-[15px]">
+                <Link
+                  href="/solutions/virtual-solutions"
+                  className="text-[15px]"
+                >
                   Virtual Solutions
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-[15px]">
+                <Link
+                  href="/solutions/domain-management-services"
+                  className="text-[15px]"
+                >
                   Domain Management Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-[15px]">
+                <Link
+                  href="/solutions/automation-services"
+                  className="text-[15px]"
+                >
                   Automation Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-[15px]">
-                  Server SetUp And Configuration
                 </Link>
               </li>
             </ul>
