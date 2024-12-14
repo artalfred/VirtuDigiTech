@@ -55,7 +55,7 @@ const VirtualSolutions = () => {
           </div>
         </section>
 
-        <section className="lg:py-[4rem] py-[4rem]">
+        <section className="lg:py-[4rem] py-[2rem]">
           <div className="flex justify-center">
             <div className="grid gap-4">
               <SectionTitle>
@@ -164,9 +164,9 @@ const VirtualSolutions = () => {
           </div>
         </section>
 
-        <section className="lg:py-[4rem] py-[2rem]">
+        <section>
           <div className="grid items-center lg:gap-[4rem] md:gap-[3rem] sm:gap-[2rem] gap-[2rem] grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:mt-[4rem] md:mt-[3rem] sm:mt-[2rem] mt-[2rem]">
-            <div className="grid gap-4 lg:mt-0 md:mt-0 sm:mt-[2rem] mt-[2rem]">
+            <div className="grid gap-4">
               <LeftTitle>
                 Key Advantages of Having a Virtual Assistant
               </LeftTitle>
