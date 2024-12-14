@@ -28,7 +28,7 @@ export const Footer = () => {
             </h4>
             <ul className="lg:mt-[0rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-3">
               <li>
-                <Link href="/" className="text-[15px]">
+                <Link href="/solutions/web-development" className="text-[15px]">
                   Web Development
                 </Link>
               </li>
