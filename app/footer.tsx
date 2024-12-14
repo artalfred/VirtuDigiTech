@@ -4,6 +4,7 @@ import Logo from "@/public/Images/Logo.png";
 import Link from "next/link";
 import Facebook from "@/public/Images/Icons/facebook.png";
 import Linkedin from "@/public/Images/Icons/linkedin.png";
+import Container from "./components/container";
 
 export const Footer = () => {
   return (

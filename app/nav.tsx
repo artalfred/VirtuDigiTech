@@ -7,8 +7,7 @@ import Image from "next/image";
 import { Button } from "./components/button";
 import { useState } from "react";
 import Footer_Logo from "../public/Images/Footer_Logo.svg";
-import { Solutions } from "./components/navMenu";
-import { navigationMenuTriggerStyle } from "./components/ui/navigation-menu";
+import { NavbarMenu } from "./components/navbarMenu";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,25 +81,25 @@ export default function Nav() {
           {/* BUTTON */}
           <div className="hidden lg:block md:hidden sm:hidden">
             <div className="hidden sm:ml-6 sm:block">
-              <div className="flex items-center gap-[1rem]">
+              <div className="flex items-center gap-[2.4rem]">
                 <Link
                   href="/WhyVirtudigitech"
-                  className={`decoration-slate-950 text-[14px] font-medium green ${navigationMenuTriggerStyle()}`}
+                  className="decoration-slate-950 text-[14px] font-medium green p-2 hover:bg-teal-100	 transition-all	 rounded-lg"
                 >
                   Why VirtuDigiTech
                 </Link>
                 <span>
-                  <Solutions />
+                  <NavbarMenu />
                 </span>
                 <Link
                   href="/articles"
-                  className={`decoration-slate-950 text-[14px] font-medium green ${navigationMenuTriggerStyle()}`}
+                  className={`decoration-slate-950 text-[15px] font-normal green`}
                 >
                   Blog Articles
                 </Link>
                 <Link
                   href="/about"
-                  className={`decoration-slate-950 text-[14px] font-medium green ${navigationMenuTriggerStyle()}`}
+                  className={`decoration-slate-950 text-[15px] font-normal green`}
                 >
                   About Us
                 </Link>

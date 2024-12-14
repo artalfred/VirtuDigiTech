@@ -10,7 +10,7 @@ export function MovingCards() {
       <div className="pb-[2rem] lg:w-[60%] md:w-[100%] sm:w-[100%] w-[95%]">
         <SectionTitle>
           See Why <span className="dark-green">Business</span> Rely on Us for
-          <span className="dark-green">Web Solutions </span>
+          <span className="dark-green"> Web Solutions </span>
           and <span className="dark-green">Virtual Support!</span>
         </SectionTitle>
       </div>

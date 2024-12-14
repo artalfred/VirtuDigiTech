@@ -19,39 +19,39 @@ export const projects = [
     title: "Web Development",
     description:
       "Customized solutions designed to boost your digital footprint.",
-    link: "https://stripe.com",
+    link: "/contact",
   },
   {
     icon: CustomerSupport,
     title: "Trusted Virtual Assistance",
     description:
       "Personalized, efficient support for your administrative and technical needs.",
-    link: "https://netflix.com",
+    link: "/contact",
   },
   {
     icon: Focused,
     title: "Focused Project Management",
     description:
       "Streamlined execution to ensure projects are completed on time.",
-    link: "https://google.com",
+    link: "/contact",
   },
   {
     icon: Technology,
     title: "Cutting-Edge Technology",
     description: "Utilizing advanced tools and strategies to stay ahead.",
-    link: "https://meta.com",
+    link: "/contact",
   },
   {
     icon: Trusted,
     title: "Outstanding Customer Support",
     description:
       "Dedicated to client satisfaction and fostering lasting partnerships.",
-    link: "https://amazon.com",
+    link: "/contact",
   },
   {
     icon: BudgetFriendly,
     title: "Budget-Friendly Services",
     description: "High-quality results that fit your budget.",
-    link: "https://microsoft.com",
+    link: "/contact",
   },
 ];

@@ -51,7 +51,7 @@ function WhyVirtuDigiTech() {
           <div>
             <SectionTitle>Why Choose Us?</SectionTitle>
           </div>
-          <div>
+          <div className="mt-[2rem]">
             <CardEffect />
           </div>
         </section>

@@ -65,7 +65,7 @@ const About = () => {
               <div className="lg:mt-[2rem] md:mt-[2rem] sm:mt-[1rem] mt-[1rem] lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%]">
                 <p className="text-center text-gray-700  leading-8">
                   <span className="green leading-8 text-center font-bold">
-                    Lester,
+                    Lester,{" "}
                   </span>
                   an IT professional with several years in the field, has been
                   the founder of VirtuDigiTech since 2022. Now VirtuDigiTech is
