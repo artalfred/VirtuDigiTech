@@ -250,7 +250,7 @@ export default function Home() {
                   Virtual Assistant
                 </h2>
                 <div className="flex gap-3">
-                  <p className="text-5xl font-bold mb-4 tracking-wide green">
+                  <p className="text-4xl font-bold mb-4 tracking-wide green">
                     $900-$1500
                   </p>
                   <p className="text-sm text-gray-500 mt-4">
