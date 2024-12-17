@@ -251,7 +251,7 @@ export default function Home() {
                 </h2>
                 <div className="flex gap-3">
                   <p className="text-5xl font-bold mb-4 tracking-wide green">
-                    $600
+                    $900-$1500
                   </p>
                   <p className="text-sm text-gray-500 mt-4">
                     Per <br></br> month
