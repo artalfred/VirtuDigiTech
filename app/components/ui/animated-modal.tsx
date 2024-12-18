@@ -4,11 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, {
   ReactNode,
   createContext,
-  useCallback,
   useContext,
   useEffect,
   useRef,
   useState,
+  RefObject,
 } from "react";
 
 interface ModalContextType {
@@ -217,10 +217,6 @@ const CloseIcon = () => {
     </button>
   );
 };
-
-// Hook to detect clicks outside of a component.
-// Add it in a separate file, I've added here for simplicity
-import { RefObject } from "react";
 
 export const useOutsideClick = (
   ref: RefObject<HTMLDivElement>, // Reference to a DOM element
