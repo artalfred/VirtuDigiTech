@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, {
   ReactNode,
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useRef,
@@ -195,7 +196,7 @@ const CloseIcon = () => {
   return (
     <button
       onClick={() => setOpen(false)}
-      className="absolute top-4 right-4 group"
+      className="absolute lg:top-4 sm:top-0 top-0 right-4 group"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -219,17 +220,19 @@ const CloseIcon = () => {
 
 // Hook to detect clicks outside of a component.
 // Add it in a separate file, I've added here for simplicity
+import { RefObject } from "react";
+
 export const useOutsideClick = (
-  ref: React.RefObject<HTMLDivElement>,
-  callback: Function
+  ref: RefObject<HTMLDivElement>, // Reference to a DOM element
+  callback: (event: MouseEvent | TouchEvent) => void // Callback that takes specific event types
 ) => {
   useEffect(() => {
-    const listener = (event: any) => {
-      // DO NOTHING if the element being clicked is the target element or their children
-      if (!ref.current || ref.current.contains(event.target)) {
+    const listener = (event: MouseEvent | TouchEvent) => {
+      // Ignore the click if it's inside the target element or its children
+      if (!ref.current || ref.current.contains(event.target as Node)) {
         return;
       }
-      callback(event);
+      callback(event); // Execute the callback with the event
     };
 
     document.addEventListener("mousedown", listener);
@@ -239,5 +242,5 @@ export const useOutsideClick = (
       document.removeEventListener("mousedown", listener);
       document.removeEventListener("touchstart", listener);
     };
-  }, [ref, callback]);
+  }, [ref, callback]); // Add dependencies to the effect
 };
