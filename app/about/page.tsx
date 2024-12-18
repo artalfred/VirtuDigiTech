@@ -104,10 +104,7 @@ const About = () => {
         <MovingCards />
       </div>
 
-      <BottomAds
-        title="Stay Connected: Let&rsquo;s Start the Conversation"
-        description="We&rsquo;re here to listen, assist, and collaborate. Reach out to us today and let&rsquo;s create something extraordinary together!"
-      />
+      <BottomAds />
     </div>
   );
 };

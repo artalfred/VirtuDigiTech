@@ -14,6 +14,7 @@ import StrategicCommunication from "@/public/Images/Expertise/StrategicCommunica
 import BottomAds from "./components/bottomAds";
 import { MovingCards } from "./components/movingCards";
 import Link from "next/link";
+import { PopUp } from "./components/PopUp";
 
 export default function Home() {
   return (
@@ -451,12 +452,9 @@ export default function Home() {
         <MovingCards />
       </div>
 
-      <BottomAds
-        title="Let&rsquo;s Build Your Success Together"
-        description="Simplify your tasks and elevate your online presence with our
-                expert web development and reliable virtual assistant services
-                designed to help your business grow."
-      />
+      <div>
+        <BottomAds />
+      </div>
     </>
   );
 }

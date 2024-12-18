@@ -62,10 +62,7 @@ function WhyVirtuDigiTech() {
       </div>
 
       <div>
-        <BottomAds
-          title="More Affordable, More Effective"
-          description="At VirtuDigiTech, we believe in providing high-quality services without breaking the bank. Our efficient processes and dedicated team allow us to offer competitive pricing without compromising on quality."
-        />
+        <BottomAds />
       </div>
     </>
   );
