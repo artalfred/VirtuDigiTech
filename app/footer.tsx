@@ -24,7 +24,10 @@ export const Footer = () => {
             >
               <Image src={Facebook} alt="facebook" height={25} />
             </Link>
-            <Link href="" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/art-alfred/"
+              target="_blank"
+            >
               <Image src={Linkedin} alt="linkedin" height={25} />
             </Link>
           </div>
