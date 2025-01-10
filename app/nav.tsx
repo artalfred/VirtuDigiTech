@@ -27,20 +27,20 @@ export default function Nav() {
     {
       id: 1,
       title: "Web Development",
-      link: "/solutions/web-development",
+      link: "/",
     },
     {
       id: 2,
-      title: "Virtual Solutions",
-      link: "/solutions/virtual-solutions",
+      title: "Email Solutions",
+      link: "/",
     },
     {
       id: 3,
-      title: "App Development",
+      title: "Campaign Management Services",
     },
     {
       id: 4,
-      title: "Domain Management System",
+      title: "Automation Services",
     },
   ];
 
@@ -48,7 +48,7 @@ export default function Nav() {
     {
       id: 2,
       title: "FAQs",
-      link: "/resources/FAQs",
+      link: "#FAQs",
     },
   ];
   return (
@@ -160,7 +160,7 @@ export default function Nav() {
                   className="text-start text-white  text-[17px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Link href="/WhyVirtudigitech" className="flex gap-2">
+                  <Link href="#services" className="flex gap-2">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ export default function Nav() {
                         <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
                       </svg>
                     </span>
-                    Why VirtuDigiTech
+                    Services
                   </Link>
                 </li>
                 <li className="text-start text-white text-[20px] font-medium flex justify-between items-center">

@@ -304,7 +304,7 @@ export default function Home() {
       </section>
 
       {/* FAQs */}
-      <section className="tools lg:pb-[6rem] pb-[2rem]">
+      <section className="tools lg:pb-[6rem] pb-[2rem]" id="FAQs">
         <Container>
           <div className="grid gap-[1rem]">
             <div className="grid items-center lg:gap-[4rem] md:gap-[3rem] sm:gap-[2rem] gap-[2rem] grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:mt-[4rem] md:mt-[3rem] sm:mt-[2rem] mt-[2rem]">
