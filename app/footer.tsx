@@ -18,8 +18,15 @@ export const Footer = () => {
           </div>
 
           <div className="flex gap-[1.6rem]">
-            <Image src={Facebook} alt="facebook" height={25} />
-            <Image src={Linkedin} alt="linkedin" height={25} />
+            <Link
+              href="https://www.facebook.com/profile.php?id=61570831358110"
+              target="_blank"
+            >
+              <Image src={Facebook} alt="facebook" height={25} />
+            </Link>
+            <Link href="" target="_blank">
+              <Image src={Linkedin} alt="linkedin" height={25} />
+            </Link>
           </div>
         </div>
 
@@ -131,7 +138,7 @@ export const Footer = () => {
             <ul className="lg:mt-[0rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-3">
               <li>
                 <Link href="/" className="text-[15px] text-slate-200">
-                  hello@virtudigitech.com
+                  info@virtudigitech.com
                 </Link>
               </li>
 
