@@ -112,10 +112,10 @@ export default function Home() {
                 </h2>
                 <div className="flex gap-3">
                   <p className="text-5xl font-semibold mb-4 tracking-wide text-slate-200">
-                    $350
+                    $800
                   </p>
                   <p className="text-sm text-slate-200 mt-4">
-                    8 - 10 Pages <br></br> w/ SEO optimization
+                    14 - 20 Pages <br></br> w/ SEO optimization
                   </p>
                 </div>
                 <p className="text-sm text-slate-200 text-[16px] mt-3">
