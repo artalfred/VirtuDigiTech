@@ -140,23 +140,20 @@ export const Footer = () => {
             </h4>
             <ul className="lg:mt-[0rem] md:mt-[1.8rem] sm:mt-[1rem] mt-[1rem] grid gap-3">
               <li>
-                <Link href="/" className="text-[15px] text-slate-200">
+                <span className="text-[15px] text-slate-200">
                   info@virtudigitech.com
-                </Link>
+                </span>
               </li>
 
               <li>
-                <Link
-                  href="/WhyVirtudigitech"
-                  className="text-[15px] text-slate-200"
-                >
+                <span className="text-[15px] text-slate-200">
                   support@virtudigitech.com
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="/articles" className="text-[15px] text-slate-200">
+                <span className="text-[15px] text-slate-200">
                   WhatsApp: +63 967 1348 488
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
