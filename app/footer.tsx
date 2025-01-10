@@ -25,7 +25,7 @@ export const Footer = () => {
               <Image src={Facebook} alt="facebook" height={25} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/art-alfred/"
+              href="https://www.linkedin.com/company/virtudigitech-va/"
               target="_blank"
             >
               <Image src={Linkedin} alt="linkedin" height={25} />
