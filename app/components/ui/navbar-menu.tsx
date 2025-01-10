@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import downArrow from "@/public/Images/Icons/downArrow.png";
 
 interface HoveredLinkProps {
   children: ReactNode;
@@ -31,7 +32,10 @@ export const MenuItem = ({
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
-      <motion.p transition={{ duration: 0.3 }} className="cursor-pointer green">
+      <motion.p
+        transition={{ duration: 0.3 }}
+        className="cursor-pointer font-medium font flex items-center gap-3 text-white"
+      >
         {item}
       </motion.p>
       {active !== null && (
@@ -72,7 +76,6 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full dark:bg-black dark:border-white/[0.2] bg-white shadow-input py-6"
     >
       {children}
     </nav>

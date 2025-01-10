@@ -20,8 +20,8 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className="">
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Solutions">
-          <div className="text-sm grid grid-cols-2 gap-10 p-5">
+        <MenuItem setActive={setActive} active={active} item="Services">
+          <div className="text-sm grid grid-cols-1 gap-10 p-5">
             <ProductItem
               title="Web Development"
               href="/solutions/web-development"
@@ -33,18 +33,6 @@ function Navbar({ className }: { className?: string }) {
               href="/solutions/virtual-solutions"
               src={Virtual}
               description="We provide reliable, efficient, and personalized support to save you time..."
-            />
-            <ProductItem
-              title="Domain Management Services"
-              href="/solutions/domain-management-services"
-              src={Domain}
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI..."
-            />
-            <ProductItem
-              title="Automation Services"
-              href="/solutions/automate-services"
-              src={Automation}
-              description="Streamline workflows and boost efficiency with custom automation solutions..."
             />
           </div>
         </MenuItem>

@@ -42,7 +42,7 @@ export function PopUp() {
                   target="_blank"
                   passHref
                 >
-                  <Button width="" background="dark">
+                  <Button width="" background="light">
                     WhatsApp
                   </Button>
                 </Link>

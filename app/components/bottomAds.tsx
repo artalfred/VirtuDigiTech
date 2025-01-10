@@ -7,7 +7,7 @@ import { PopUp } from "./PopUp";
 
 const BottomAds = () => {
   return (
-    <section className="py-[6rem] card-gradient">
+    <section className="py-[6rem] rounded-xl bg-black/10 ads">
       <Container>
         <div className="flex justify-center">
           <div className="grid gap-4">

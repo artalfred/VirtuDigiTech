@@ -2,13 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.font {
+  font-family: "Parkinsans", serif;
+}
+
+/* h1,
+h2,
+h3 {
+  font-family: "Ysabeau SC", serif;
+} */
+
+p {
+  font-family: "Poppins", serif;
+}
+
 .hero {
-  background-image: url("../public/Images/Hero.jpg");
+  background-image: url("../public/Images/Background/Hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,22 +39,28 @@ body {
   color: #093028;
   border: 3px solid #fff;
   transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .light-button:hover {
   background-color: #f5f3f3;
+  border: 3px solid #f5f3f3;
   color: #093028;
 }
 
 .dark-button {
-  background-color: #036666;
+  background-color: #000;
   color: #fff;
-  border: 3px solid #036666;
+  border: 3px solid #000;
   transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
 .dark-button:hover {
-  background-color: #14746f;
+  background-color: #fff;
+  border: 3px solid #fff;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
 .trans-button {
@@ -65,16 +90,8 @@ body {
 }
 
 .card-gradient {
-  background: -webkit-linear-gradient(
-    to right,
-    #093028,
-    #237a57
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #093028,
-    #237a57
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #093028, #111111);
+  background: linear-gradient(to right, #061d18, #111111);
 }
 
 .ashGray {
@@ -83,6 +100,7 @@ body {
 
 /* ///////////////////////////////////////////// */
 /* COLOR */
+
 .green {
   color: #093028;
 }
@@ -98,7 +116,7 @@ body {
 
 /* SECTION 2 */
 .tools {
-  background-image: url("../public/Images/Background/pattern.jpg");
+  background-image: url("../public/Images/Background/tools.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,8 +164,8 @@ body {
   /* background-size: cover; */
 }
 
-footer {
-  background-image: url("../public/Images/Footer.jpg");
+.ads {
+  background-image: url("../public/Images/Background/pattern.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

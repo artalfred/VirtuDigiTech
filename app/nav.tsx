@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "./components/button";
 import { useState } from "react";
 import Footer_Logo from "../public/Images/Footer_Logo.svg";
+import LogoLight from "../public/Images/LogoLight.svg";
 import { NavbarMenu } from "./components/navbarMenu";
 
 export default function Nav() {
@@ -41,22 +42,9 @@ export default function Nav() {
       id: 4,
       title: "Domain Management System",
     },
-    {
-      id: 5,
-      title: "Automation Services",
-    },
-    {
-      id: 6,
-      title: "Server Setup And Configuration",
-    },
   ];
 
   const resources = [
-    {
-      id: 1,
-      title: "Blogs",
-      link: "/resources/blogs",
-    },
     {
       id: 2,
       title: "FAQs",
@@ -66,14 +54,14 @@ export default function Nav() {
   return (
     <Disclosure
       as="nav"
-      className="bg-white decoration-slate-200 shadow-slate-250 shadow-sm py-2 fixed w-full z-50"
+      className="absolute decoration-slate-200 shadow-slate-250 py-2 w-full z-50"
     >
       <div className="px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem]">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex gap-[3rem] items-center">
             <div className="flex shrink-0 items-center">
               <Link href="/">
-                <Image src={Logo} alt="VirtuDigiTech" height={80} />
+                <Image src={LogoLight} alt="VirtuDigiTech" height={55} />
               </Link>
             </div>
           </div>
@@ -83,30 +71,27 @@ export default function Nav() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex items-center gap-[2.4rem]">
                 <Link
-                  href="/WhyVirtudigitech"
-                  className="decoration-slate-950 text-[14px] font-medium green p-2 hover:bg-teal-100	 transition-all	 rounded-lg"
+                  href="#services"
+                  className="text-[14px] text-white hover:text-black font-medium p-2 hover:bg-teal-100 transition-all rounded-lg"
                 >
-                  Why VirtuDigiTech
-                </Link>
-                <span>
-                  <NavbarMenu />
-                </span>
-                <Link
-                  href="/articles"
-                  className={`decoration-slate-950 text-[15px] font-normal green`}
-                >
-                  Blog Articles
+                  Services
                 </Link>
                 <Link
-                  href="/about"
-                  className={`decoration-slate-950 text-[15px] font-normal green`}
+                  href="/"
+                  className="text-[14px] text-white hover:text-black font-medium p-2 hover:bg-teal-100 transition-all rounded-lg"
+                >
+                  Portfolio
+                </Link>
+                <Link
+                  href="/"
+                  className={`text-white font-medium text-[15px] hover:bg-teal-100 hover:text-black transition-all rounded-lg p-2`}
                 >
                   About Us
                 </Link>
 
                 <Link href="/contact">
-                  <Button background="dark" width="">
-                    Get in touch
+                  <Button background="light" width="">
+                    Book a call
                   </Button>
                 </Link>
               </div>
