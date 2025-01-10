@@ -31,7 +31,10 @@ export default function Home() {
               transform opportunities into measurable success for your business.
             </p>
             <div className="mt-3 flex gap-[2rem]">
-              <Link href="/contact">
+              <Link
+                href="https://calendly.com/admin-virtudigitech/30min"
+                target="_blank"
+              >
                 <Button width="" background="light">
                   Book a call
                 </Button>
@@ -53,7 +56,7 @@ export default function Home() {
       {/* SECTION 2 */}
       <section className="tools lg:pb-[0rem] pb-[2rem]">
         <Container>
-          <div className="grid gap-[1rem] mt-[6rem]">
+          <div className="grid gap-[1rem] mt-[8rem]">
             <div className="grid items-center lg:gap-[4rem] md:gap-[3rem] sm:gap-[2rem] gap-[2rem] grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:mt-[4rem] md:mt-[3rem] sm:mt-[2rem] mt-[2rem]">
               <div className="rounded-lg overflow-hidden">
                 <TitleCenter>
@@ -75,7 +78,10 @@ export default function Home() {
                 </div>
 
                 <div className="mt-[2rem]">
-                  <Link href="/contact">
+                  <Link
+                    href="https://calendly.com/admin-virtudigitech/30min"
+                    target="_blank"
+                  >
                     <Button width="" background="light">
                       Book a call
                     </Button>
@@ -118,9 +124,12 @@ export default function Home() {
                 </p>
 
                 <div className="mt-6">
-                  <Link href="/contact">
+                  <Link
+                    href="https://calendly.com/admin-virtudigitech/30min"
+                    target="_blank"
+                  >
                     <Button width="w-full" background="light">
-                      Request a Quote
+                      Get a free consultation
                     </Button>
                   </Link>
                 </div>
@@ -226,7 +235,10 @@ export default function Home() {
                   substantial revenue.
                 </p>
                 <div className="mt-[3rem]">
-                  <Link href="/contact">
+                  <Link
+                    href="https://calendly.com/admin-virtudigitech/30min"
+                    target="_blank"
+                  >
                     <Button width="w-full" background="light">
                       Book a call
                     </Button>
@@ -276,7 +288,10 @@ export default function Home() {
                 <h3 className="text-5xl mt-[2rem] text-white">Let's Talk!</h3>
 
                 <div className="mt-[2rem]">
-                  <Link href="/contact">
+                  <Link
+                    href="https://calendly.com/admin-virtudigitech/30min"
+                    target="_blank"
+                  >
                     <Button width="w-full" background="light">
                       Book a Call
                     </Button>

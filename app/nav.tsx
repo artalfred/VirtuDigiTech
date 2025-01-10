@@ -89,7 +89,10 @@ export default function Nav() {
                   About Us
                 </Link>
 
-                <Link href="/contact">
+                <Link
+                  href="https://calendly.com/admin-virtudigitech/30min"
+                  target="_blank"
+                >
                   <Button background="light" width="">
                     Book a call
                   </Button>
