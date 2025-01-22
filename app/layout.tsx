@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "./nav";
 import { Footer } from "./footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const Park = localFont({
   src: "./fonts/Park.ttf",
@@ -45,6 +46,7 @@ export default function RootLayout({
       </head>
       <body className={Park.className}>
         <Nav />
+        <Analytics />
         <main>{children}</main>
         <Footer />
       </body>
