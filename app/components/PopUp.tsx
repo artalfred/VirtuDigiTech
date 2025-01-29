@@ -38,7 +38,7 @@ export function PopUp() {
             <div className=" flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto mt-4">
               <div className="flex  items-center justify-center">
                 <Link
-                  href={`https://wa.me/+639671348488`}
+                  href={`https://wa.me/+639917912427`}
                   target="_blank"
                   passHref
                 >

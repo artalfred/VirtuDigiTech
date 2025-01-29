@@ -152,7 +152,7 @@ export const Footer = () => {
               </li>
               <li>
                 <span className="text-[15px] text-slate-200">
-                  WhatsApp: +63 967 1348 488
+                  WhatsApp: +63 991 791 2427
                 </span>
               </li>
             </ul>
