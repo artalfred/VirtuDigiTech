@@ -351,8 +351,8 @@ export default function Home() {
                 Import the inboxes
               </h2>
               <p className="text-center text-lg mt-[1rem]">
-                We import your inboxes to your desired software including (
-                Smartleads, Instantly, etc.)
+                You can now import your inboxes directly into your preferred
+                software, including Smartleads, Instantly, and more.
               </p>
             </div>
           </div>
