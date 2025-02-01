@@ -94,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 3 */}
-      <section className="lg:py-[6rem] py-[2rem] tools" id="services">
+      {/* <section className="lg:py-[6rem] py-[2rem] tools" id="services">
         <Container>
           <div className="grid gap-[2rem] grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
             <div className="bg-slate-100/5 shadow-lg rounded-lg w-full">
@@ -289,6 +289,303 @@ export default function Home() {
                     </Button>
                   </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section> */}
+
+      <section className="lg:py-[6rem] py-[2rem] tools" id="services">
+        <Container>
+          <div className="grid gap-[2rem] grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div className="bg-slate-100/5 shadow-lg rounded-lg w-full relative h-[38rem]">
+              <div className=" p-[2rem] border-b-[1px] border-l-cyan-200">
+                <h2 className="text-2xl mb-4 font-normal text-slate-200">
+                  Basic plan
+                </h2>
+                <div className="flex items-center gap-3">
+                  <p className="text-5xl font-semibold mb-4 tracking-wide text-slate-200">
+                    $1.<span className="text-6xl">6</span>
+                  </p>
+                  <div className="flex gap-3">
+                    <p className="text-lg text-slate-200 mt-4">/ inbox</p>
+                  </div>
+                </div>
+
+                <p className="text-xl text-slate-200 text-[16px] mt-3">
+                  50 - 299 inboxes
+                </p>
+              </div>
+
+              <div className="p-[2rem]">
+                <h3 className="lg:text-[26px] md:text-[20px] sm:text-[18px] text-[18px] mb-0 font-semibold text-slate-200">
+                  Features
+                </h3>
+                <ul className="grid gap-2 mt-4">
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      US Google Workspace business
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you DKIM
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you DMARC
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you SPF
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you MX
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mt-6 absolute w-full px-[2rem] bottom-[2rem]">
+                <Link
+                  href="https://calendly.com/admin-virtudigitech/30min"
+                  target="_blank"
+                >
+                  <Button width="w-full" background="light">
+                    Get started now
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-slate-100/5 shadow-lg rounded-lg w-full relative h-[38rem]">
+              <div className="p-[2rem] border-b-[1px] border-l-cyan-200">
+                <h2 className="text-2xl mb-4 font-normal text-slate-200">
+                  Business Plan
+                </h2>
+                <div className="flex items-center gap-3">
+                  <p className="text-5xl font-semibold mb-4 tracking-wide text-slate-200">
+                    $1.<span className="text-6xl">4</span>
+                  </p>
+                  <div className="flex gap-3">
+                    <p className="text-lg text-slate-200 mt-4">/ inbox</p>
+                  </div>
+                </div>
+
+                <p className="text-xl text-slate-200 text-[16px] mt-3">
+                  200 - 499 inboxes
+                </p>
+              </div>
+
+              <div className="p-[2rem]">
+                <h3 className="lg:text-[26px] md:text-[20px] sm:text-[18px] text-[18px] mb-0 font-semibold text-slate-200">
+                  Features
+                </h3>
+                <ul className="grid gap-2 mt-4">
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      US Google Workspace business
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you DKIM
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you DMARC
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you SPF
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="size-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-200 text-lg">
+                      Done for you MX
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mt-6 absolute w-full px-[2rem] bottom-[2rem]">
+                <Link
+                  href="https://calendly.com/admin-virtudigitech/30min"
+                  target="_blank"
+                >
+                  <Button width="w-full" background="light">
+                    Get a free consultation
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="card-gradient shadow-md rounded-lg w-full lg:block md:hidden sm:block block relative">
+              <div className="p-[2rem] ">
+                <h2 className="text-2xl mb-4 font-normal text-slate-200">
+                  Enterprise Plan
+                </h2>
+                <div className="flex items-center gap-3">
+                  <p className="text-5xl font-semibold mb-4 tracking-wide text-slate-200">
+                    $1,<span className="text-6xl">400</span>
+                  </p>
+                  <div className="flex gap-3">
+                    <p className="text-lg text-slate-200 mt-4">/ Lifetime</p>
+                  </div>
+                </div>
+
+                <p className="text-xl text-slate-200 text-[16px] mt-3">
+                  700 inboxes
+                </p>
+
+                <h6 className="mt-[2rem] text-slate-200 text-xl font-semibold">
+                  Special offer:
+                </h6>
+                <p className="text-white text-md text-[16px] mt-3">
+                  Get setup for 700 inboxes and complete DNS configuration for
+                  just $1,400. Optimize your email system with our reliable and
+                  secure service. Start today!
+                </p>
+              </div>
+
+              <div className="mt-6 absolute w-full px-[2rem] bottom-[2rem]">
+                <h3 className="text-5xl mt-[2rem] text-white pb-[2rem]">
+                  Let's Talk!
+                </h3>
+                <Link
+                  href="https://calendly.com/admin-virtudigitech/30min"
+                  target="_blank"
+                >
+                  <Button width="w-full" background="light">
+                    Book a call
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
