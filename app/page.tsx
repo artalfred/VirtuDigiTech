@@ -296,7 +296,67 @@ export default function Home() {
       </section> */}
 
       <section className="lg:py-[6rem] py-[2rem] tools" id="services">
+        <div className="rounded-lg overflow-hidden">
+          <div className="items-center lg:mt-[4rem] md:mt-[3rem] sm:mt-[2rem] mt-[2rem] pb-[3rem]">
+            <div>
+              <p className="text-white text-center text-[24px] mt-3">
+                How it works
+              </p>
+            </div>
+            <div className="lg:mt-[2rem] md:mt-[1rem] sm:mt-[0] mt-0">
+              <TitleCenter>
+                <h1 className="text-center">Simplifying your inbox setup</h1>
+              </TitleCenter>
+            </div>
+          </div>
+        </div>
         <Container>
+          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 lg:pb-[4rem] md:pb-[2rem] sm:pb-[1rem] pb-[1rem]">
+            <div className="p-[2rem] text-slate-200">
+              <div className="flex justify-center">
+                <h1 className="bg-slate-100/5 shadow-lg text-center text-5xl rounded-full py-[.8rem] px-[1.7rem]">
+                  1
+                </h1>
+              </div>
+              <h2 className="lg:text-[30px] md:text-[26px] sm:text-[24px] text-[24px] text-center mt-[1rem] ">
+                Easy Inbox Setup
+              </h2>
+              <p className="text-center text-lg mt-[1rem]">
+                We create Google Workspace Business Accounts and connect them to
+                your desired domains.
+              </p>
+            </div>
+
+            <div className="p-[2rem] text-slate-200">
+              <div className="flex justify-center">
+                <h1 className="bg-slate-100/5 shadow-lg text-center text-5xl rounded-full py-[.8rem] px-[1.5rem]">
+                  2
+                </h1>
+              </div>
+              <h2 className="lg:text-[30px] md:text-[26px] sm:text-[24px] text-[24px] text-center mt-[1rem] ">
+                Insert DNS records
+              </h2>
+              <p className="text-center text-lg mt-[1rem]">
+                We will insert relevant DNS records such as DMARC, DKIM, MX and
+                SPF to maximize your deliverability.
+              </p>
+            </div>
+            <div className="p-[2rem] text-slate-200">
+              <div className="flex justify-center">
+                <h1 className="bg-slate-100/5 shadow-lg text-center text-5xl rounded-full py-[.8rem] px-[1.5rem]">
+                  3
+                </h1>
+              </div>
+              <h2 className="lg:text-[30px] md:text-[26px] sm:text-[24px] text-[24px] text-center mt-[1rem] ">
+                Import the inboxes
+              </h2>
+              <p className="text-center text-lg mt-[1rem]">
+                We import your inboxes to your desired software including (
+                Smartleads, Instantly, etc.)
+              </p>
+            </div>
+          </div>
+
           <div className="grid gap-[2rem] grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
             <div className="bg-slate-100/5 shadow-lg rounded-lg w-full relative h-[38rem]">
               <div className=" p-[2rem] border-b-[1px] border-l-cyan-200">
@@ -546,7 +606,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="card-gradient shadow-md rounded-lg w-full lg:block md:hidden sm:block block relative">
+            <div className="card-gradient h-[38rem] shadow-md rounded-lg w-full lg:block md:hidden sm:block block relative">
               <div className="p-[2rem] ">
                 <h2 className="text-2xl mb-4 font-normal text-slate-200">
                   Enterprise Plan

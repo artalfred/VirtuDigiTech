@@ -157,10 +157,10 @@ export default function Nav() {
             <div className="grid px-[2rem] w-full">
               <ul className="grid gap-[1rem]">
                 <li
-                  className="text-start text-white  text-[17px] font-medium"
+                  className="text-start text-white font-medium text-[20px]"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Link href="#services" className="flex gap-2">
+                  <Link href="#services" className="flex gap-4">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +182,7 @@ export default function Nav() {
                       isSolutionOpen ? "dark-green" : "text-white"
                     }`}
                   >
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-4">
                       <span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -266,7 +266,7 @@ export default function Nav() {
                       isResourcesOpen ? "dark-green" : "text-white"
                     }`}
                   >
-                    <div className="flex gap-2">
+                    <div className="flex gap-4">
                       <span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
