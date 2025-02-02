@@ -314,7 +314,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 lg:pb-[4rem] md:pb-[2rem] sm:pb-[1rem] pb-[1rem]">
             <div className="p-[2rem] text-slate-200">
               <div className="flex justify-center">
-                <h1 className="bg-slate-100/5 shadow-lg text-center text-5xl rounded-full py-[.8rem] px-[1.7rem]">
+                <h1 className="bg-slate-100/5 shadow-lg text-center lg:text-5xl md:text-4xl sm:text-4xl text-4xl rounded-full lg:py-[.8rem] md:py-[.8rem] sm:py-[.7rem] py-[.8rem] px-[1.7rem]">
                   1
                 </h1>
               </div>
@@ -329,7 +329,7 @@ export default function Home() {
 
             <div className="p-[2rem] text-slate-200">
               <div className="flex justify-center">
-                <h1 className="bg-slate-100/5 shadow-lg text-center text-5xl rounded-full py-[.8rem] px-[1.5rem]">
+                <h1 className="bg-slate-100/5 shadow-lg text-center lg:text-5xl md:text-4xl sm:text-4xl text-4xl rounded-full lg:py-[.8rem] md:py-[.8rem] sm:py-[.9rem] py-[.9rem] px-[1.5rem]">
                   2
                 </h1>
               </div>
@@ -343,7 +343,7 @@ export default function Home() {
             </div>
             <div className="p-[2rem] text-slate-200">
               <div className="flex justify-center">
-                <h1 className="bg-slate-100/5 shadow-lg text-center text-5xl rounded-full py-[.8rem] px-[1.5rem]">
+                <h1 className="bg-slate-100/5 shadow-lg text-center lg:text-5xl md:text-4xl sm:text-4xl text-4xl rounded-full lg:py-[.8rem] md:py-[.8rem] sm:py-[.9rem] py-[.9rem] px-[1.5rem]">
                   3
                 </h1>
               </div>
