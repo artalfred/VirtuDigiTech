@@ -375,9 +375,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <p className="text-xl text-slate-200 text-[16px] mt-3">
-                  50 - 299 inboxes
-                </p>
+                <p className="text-md text-slate-200">50 - 299 inboxes</p>
               </div>
 
               <div className="p-[2rem]">
@@ -499,9 +497,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <p className="text-xl text-slate-200 text-[16px] mt-3">
-                  200 - 499 inboxes
-                </p>
+                <p className="text-md text-slate-200">200 - 499 inboxes</p>
               </div>
 
               <div className="p-[2rem]">
@@ -623,9 +619,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <p className="text-xl text-slate-200 text-[16px] mt-3">
-                  700 inboxes
-                </p>
+                <p className="text-slate-200 text-md">700 inboxes</p>
 
                 <h6 className="mt-[2rem] text-slate-200 text-xl font-semibold">
                   Special offer:
