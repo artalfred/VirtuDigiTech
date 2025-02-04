@@ -12,37 +12,40 @@ import { FAQs } from "./components/accordion";
 export default function Home() {
   return (
     <>
-      <main className="pt-[12rem] pb-[0] lg:h-[50rem] md:h-[45rem] sm:h-[35rem] h-[40rem] grid items-center hero">
-        <div className="container mx-auto px-[1rem] sm:px-[2rem] md:px-[2rem] lg:px-[6rem] overflow-hidden">
-          <div className="mt-[2rem] lg:w-[65%] md:w-[100%] sm:w-[100%] w-[100%] grid gap-4">
-            <Title>
-              <span className="text-white">Transform Leads Into Revenue</span>
-            </Title>
-            <p className="text-white text-[20px]">
-              Innovative strategies that amplify growth, boost engagement, and
-              transform opportunities into measurable success for your business.
-            </p>
-            <div className="mt-3 flex gap-[2rem]">
-              <Link
-                href="https://calendly.com/admin-virtudigitech/30min"
-                target="_blank"
-              >
+      <main className="lg:pt-[12rem] md:pt-[8rem] sm:pt-[8rem] pt-[8rem] pb-[0] lg:h-[50rem] md:h-[45rem] sm:h-[35rem] h-[40rem] grid items-center hero">
+        <Container>
+          <div className="overflow-hidden">
+            <div className="mt-[2rem] lg:w-[65%] md:w-[100%] sm:w-[100%] w-[100%] grid gap-4">
+              <Title>
+                <span className="text-white">Transform Leads Into Revenue</span>
+              </Title>
+              <p className="text-white text-[20px]">
+                Innovative strategies that amplify growth, boost engagement, and
+                transform opportunities into measurable success for your
+                business.
+              </p>
+              <div className="mt-3 flex gap-[2rem]">
+                <Link
+                  href="https://calendly.com/admin-virtudigitech/30min"
+                  target="_blank"
+                >
+                  <Button width="" background="light">
+                    Book a call
+                  </Button>
+                </Link>
+                {/* <Link href="/about">
                 <Button width="" background="light">
-                  Book a call
+                Learn More
                 </Button>
-              </Link>
-              {/* <Link href="/about">
-                <Button width="" background="light">
-                  Learn More
-                </Button>
-              </Link> */}
+                </Link> */}
+              </div>
+            </div>
+
+            <div className="p-[1rem] bg-slate-200/5 rounded-[16px] mt-[3rem]">
+              <MovingCards />
             </div>
           </div>
-
-          <div className="p-[1rem] bg-slate-200/5 rounded-[16px] mt-[3rem]">
-            <MovingCards />
-          </div>
-        </div>
+        </Container>
       </main>
 
       {/* SECTION 2 */}
@@ -321,7 +324,7 @@ export default function Home() {
               <h2 className="lg:text-[30px] md:text-[26px] sm:text-[24px] text-[24px] text-center mt-[1rem] ">
                 Easy Inbox Setup
               </h2>
-              <p className="text-center text-lg mt-[1rem]">
+              <p className="text-center text-md mt-[1rem]">
                 We create Google Workspace Business Accounts and connect them to
                 your desired domains.
               </p>
@@ -336,7 +339,7 @@ export default function Home() {
               <h2 className="lg:text-[30px] md:text-[26px] sm:text-[24px] text-[24px] text-center mt-[1rem] ">
                 Insert DNS records
               </h2>
-              <p className="text-center text-lg mt-[1rem]">
+              <p className="text-center text-md mt-[1rem]">
                 We will insert relevant DNS records such as DMARC, DKIM, MX and
                 SPF to maximize your deliverability.
               </p>
@@ -350,7 +353,7 @@ export default function Home() {
               <h2 className="lg:text-[30px] md:text-[26px] sm:text-[24px] text-[24px] text-center mt-[1rem] ">
                 Import the inboxes
               </h2>
-              <p className="text-center text-lg mt-[1rem]">
+              <p className="text-center text-md mt-[1rem]">
                 You can now import your inboxes directly into your preferred
                 software, including Smartleads, Instantly, and more.
               </p>
@@ -395,7 +398,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       US Google Workspace business
                     </span>
                   </li>
@@ -412,7 +415,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you DKIM
                     </span>
                   </li>
@@ -429,7 +432,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you DMARC
                     </span>
                   </li>
@@ -446,7 +449,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you SPF
                     </span>
                   </li>
@@ -463,7 +466,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you MX
                     </span>
                   </li>
@@ -519,7 +522,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       US Google Workspace business
                     </span>
                   </li>
@@ -536,7 +539,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you DKIM
                     </span>
                   </li>
@@ -553,7 +556,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you DMARC
                     </span>
                   </li>
@@ -570,7 +573,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you SPF
                     </span>
                   </li>
@@ -587,7 +590,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-slate-200 text-lg">
+                    <span className="text-slate-200 text-md">
                       Done for you MX
                     </span>
                   </li>
